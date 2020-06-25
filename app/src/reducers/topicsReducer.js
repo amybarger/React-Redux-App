@@ -4,7 +4,7 @@ const initialState = {
     error: ''
 }
 
-export const topicesReducer = (state = initialState, action) => {
+export const topicsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'FETCH_TOPIC' :
             return {

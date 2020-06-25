@@ -7,4 +7,19 @@ h1 {
     padding: 5%;
     text-align: center;
     border: 5px solid peru;
+    color: maroon;
+    font-size: 3rem;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+button {
+    background-color: peru;
+    color: white;
+    padding: 2%;
+    font-size: 1rem;
+    border: 1px solid white;
 }

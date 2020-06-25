@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { topicsReducer as topics } from './topicsReducer';
+import { topicsReducer } from './topicsReducer';
 
 export default combineReducers({
-    topics
+    topicsReducer 
 });

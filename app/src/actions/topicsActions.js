@@ -7,15 +7,16 @@ export const fetchTopic = () => {
     return dispatch => {
         dispatch({ type: 'FETCH_TOPIC'});
         axios
-            .get('https://www.healthcare.gov/api/:content-type.json')
+            .get('	https://api.adviceslip.com/advice')
             .then(res => {
                 dispatch({ type: 'FETCH_TOPIC_SUCCESS',
-                payload: res.data.topic});
+                payload: res.data.slip.advice}, 
+                console.log("API success", res));
             })
             .catch(err => {
                 dispatch({
                     type: 'FETCH_TOPIC_FAILURE',
-                    payload: `Error ${err.response.status} : ${err.response.data}`
+                    payload: `Error ${err.response} : ${err.response}`
                 })
             })
     }
